@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BUTTONS</title>
+  </head>
+  <body>
+    <a href="https://google.com" target="_blank">
+      <button
+        style="
+          font-size: 25px;
+          background-color: grey;
+          color: lightblue;
+          border-radius: 25px;
+          border-color: black;
+        "
+      >
+        Click Me to Go to Google
+      </button>
+    </a>
+    <br />
+    <br />
+    <a href="/11b_buttons_page2.html">
+      <button
+        style="
+          border: 5px solid black;
+          border-radius: 25px;
+          font-size: 25px;
+          color: black;
+          background-color: orange;
+        "
+      >
+        Go to Second Page!
+      </button>
+    </a>
+    <br />
+    <br />
+    <button onclick="doSomething()">A little bit of Javascript</button>
+    <script>
+      function doSomething() {
+        document.getElementById("greeting").innerHTML = "Goodbye";
+      }
+    </script>
+    <p id="greeting">Hello</p>
+  </body>
+</html>
