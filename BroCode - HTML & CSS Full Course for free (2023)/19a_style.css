@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+}
+
+.box {
+  border: 5px solid;
+  font-size: 5em;
+  width: 250px;
+  height: 250px;
+
+  
+}
+
+#box1 {
+  background-color: red;
+  /* margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px; */
+  
+  /* margin: 75px; */
+
+  /* Will stick to the right since margin-left:auto will allow the margin on the left to take up max space */
+  /* margin-left: auto; */
+  /* already left justified so margin-right auto will just appear to be doing nothing */
+  /* margin-right: auto; */
+
+  /* to center the element, use margin:auto */
+  margin: auto;
+}
+
+#box2 {
+  background-color: skyblue;
+
+  margin: auto;
+}
