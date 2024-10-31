@@ -1,0 +1,60 @@
+/* for unvisited links */
+a:link {
+  color: red;
+}
+
+/* on hover */
+a:hover {
+  color: yellow;
+  font-size: 1.1em;
+}
+
+/* for visited links */
+a:visited {
+  color: green;
+}
+
+/* when the link is clicked */
+a:active {
+  color: orange;
+  font-size: 1.2em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:hover {
+  background-color: yellow;
+}
+
+/* anything not being hovered */
+li:not(:hover) {
+  background-color: grey;
+}
+
+/* For selecting an element */
+/* the parameter inside the nth-child pseudo class can be an expression */
+/* li:nth-child(even) {
+  background-color: yellowgreen;
+} */
+
+/* li:nth-child(3n) {
+  background-color: yellowgreen;
+} */
+
+li:nth-child(3n+1) {
+  background-color: yellowgreen;
+}
+
+#greeting p {
+  background-color: skyblue;
+  padding: 10px;
+
+  /* make the p element invisible, and only show it when hovering to greeting */
+  display: none;
+}
+
+#greeting:hover p{
+  display: block;
+}
