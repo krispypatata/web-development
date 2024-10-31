@@ -1,0 +1,47 @@
+/* fix the issue where when the cursor hovers over an empty area very close to the dropdown div, the dropdown menu gets triggered */
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+
+  /* change the appearance of the cursor when hovering over this button */
+  cursor: pointer;
+}
+
+.dropdown a {
+  display: block;
+  color: black;
+  
+  /* remove the underlines */
+  text-decoration: none;
+
+  padding: 10px 15px;
+}
+
+.dropdown .content {
+  background-color: rgb(208, 208, 208);
+  position: absolute;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.78);
+
+  /* only display these options when hovering over the food button */
+  display: none;
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+
+.dropdown:hover button {
+  background-color: rgb(226, 234, 144);
+  color: black;
+}
+
+.dropdown a:hover {
+  background-color: yellowgreen;
+}
