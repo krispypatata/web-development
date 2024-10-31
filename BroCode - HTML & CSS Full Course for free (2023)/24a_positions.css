@@ -1,0 +1,39 @@
+#box1 {
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+
+  /* position property is typically used with top, left, bottom, right, properties */    
+
+  /* relative = positioned relative to where it normally is */
+  position: relative;
+  top: 100px;
+  left: -100px;
+
+  /* fixed = positioned relative to the viewport */
+  /* THIS fixed property is good for advertisements like banners */
+  position: fixed;
+  left: 0px;
+  bottom: 50px;
+
+  /* sticky = positioned based on scroll position */
+  /* kind of similar to fix but with sticky we reserve some space for the element */
+  /* with fixed we don't reserve space */
+  position: sticky;
+  top: 0px;
+
+  /* static = default position for an element */
+  position: static;
+}
+
+#box2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  /* absolute = positioned relative to nearest ancestor */
+  /* box2's ancestor is box1 */
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
