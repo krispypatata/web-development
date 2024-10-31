@@ -1,0 +1,44 @@
+body {
+  margin: 0px;
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.navbar ul {
+  /* to remove the bullet points */
+  list-style: none;
+
+  background-color: rgb(0, 0, 0);
+  padding: 0px;
+  margin: 0px;
+
+  overflow: hidden;
+}
+
+.navbar a {
+  color: white;
+
+  /* remove underlines */
+  text-decoration: none;
+
+  padding: 15px;
+
+  display: block;
+
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: gray;
+}
+
+.navbar li {
+  float: left;
+}
