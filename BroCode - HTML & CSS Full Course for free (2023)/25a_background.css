@@ -1,0 +1,16 @@
+body {
+  background-image: url(assets/images/background-small.jpg);
+
+  /* small res images repeat themselves */
+  /* to fix this set the background-repeat property to no-repeat */
+  background-repeat: no-repeat;
+
+  /* Center the background image horizontally */
+  background-position: center;
+
+  /* background-attachment - sets whether the background image scrolls with the rest of the page or is it fixed */
+  background-attachment: fixed;
+
+  /* background-size: cover = takes entire space of the background */
+  background-size: cover;
+}
