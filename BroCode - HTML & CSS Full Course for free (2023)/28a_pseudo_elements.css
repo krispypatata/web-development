@@ -1,0 +1,38 @@
+h1::first-letter {
+  font-size: 2em;
+  font-style: italic;
+}
+
+p::first-line {
+  background-color: yellow;
+}
+
+/* selection = anything that is selected by the mouse */
+p::selection {
+  color: yellowgreen;
+  background-color: grey;
+}
+
+/* before each list item */
+/* #fruit li::before {
+  content: "✔️";
+} */
+
+#apple::after {
+  content: "🍎";
+}
+
+#orange::after {
+  content: "🍊";
+}
+
+#banana::after {
+  content: "🍌";
+}
+
+/* change the marker */
+#fruit li::marker {
+  content: "✔️";
+  color: green;
+  font-size: 1.2em;
+}
