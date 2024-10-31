@@ -1,0 +1,20 @@
+div {
+  border: 2px solid;
+  height: 75px;
+
+  /* visible = allow overflow (this is the default one that is set in elements) */
+  overflow: visible;
+
+  /* hidden = hide the parts that overflowed but can still interact with them */
+  overflow: hidden;
+
+  /* clip = very similar to hidden but has the option to show some parts using overflow-clip-margin */
+  overflow: clip;
+  overflow-clip-margin: 13px;
+
+  /* scroll = will provide scrollbars (both horizontal and vertical) to see all contents; will always show the scrollbars */
+  overflow: scroll;
+
+  /* auto =  just like scroll but will only show the scrollbar if applicable */
+  overflow: auto;
+}
