@@ -1,0 +1,16 @@
+body {
+  border: 3px solid;
+
+  /* To fix the seond image (pikachu) overflowing on the border we can set the display to flow-root*/
+  display: flow-root;
+}
+
+#img1 {
+  float: left;
+  margin-right: 10px;
+}
+
+#img2 {
+  float: right;
+  margin-left: 10px;
+}
