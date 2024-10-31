@@ -1,0 +1,39 @@
+div {
+  /* div is a block-level element */
+  background-color: red;
+  width: 100px;
+  height: 100px;
+
+  /* div display propery's default value is block (because it's a blcok element) */
+  display: block;
+
+  /* will now act like a span (in-line element) */
+  display: inline;
+
+  /* inline-block is just like block but would only occupy the space needed by the element (others will take the space) */
+  display: inline-block;
+}
+
+span {
+  background-color: skyblue;
+
+  /* Even if we change the width and height of the span property it wouldnt change in size because it's naturally an in-line element, unless we change its display property */
+  width: 100px;
+  height: 100px;
+
+  /* can how change in size */
+  display: block;
+
+  /* will now act like a span (in-line element) */
+  display: inline;
+
+  /* inline-block is just like block but would only occupy the space needed by the element (others will take the space) */
+  display: inline-block;
+
+  /* none = will erase the elemment */
+  /* display: none; */
+
+  /* visibility: hidden = will make the element invisible but still takes up space */
+
+  visibility: hidden;
+}
