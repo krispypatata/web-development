@@ -1,0 +1,13 @@
+h1 {
+  /* horizontal offset, vertical offset, blur, color*/
+  /* can add more than one shadow effect using a comma */
+  text-shadow: 3px -3px 3px red, 
+  -3px 3px 3px blue;
+}
+
+#box1 {
+  width: 100px;
+  height: 100px;
+  background-color: orangered;
+  box-shadow: 3px 3px 5px green;
+}
