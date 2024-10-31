@@ -1,0 +1,24 @@
+#container {
+  border: 2px solid;
+}
+
+/* <space>  = descendant */
+#container p{
+  background-color: yellow;
+}
+
+/* > = direct children */
+#container > p {
+  background-color: aquamarine;
+}
+
+/* ~ = general sibling */
+#container ~ p {
+  background-color: orange;
+}
+
+/* + = adjacent sibling */
+/* adjacent = next direct sibling, but not all siblings */
+#container + p {
+  background-color: green;
+}
