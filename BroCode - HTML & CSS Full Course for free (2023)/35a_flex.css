@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+
+  /* MAIN AXIS = horizonal */
+  /* CROSS AXIS = vertical */
+
+  /* justify-content = main axis */
+  /* align-items = cross axis */
+
+  /* default direction is row */
+  flex-direction: row;
+
+  /* will be right anchored (left-right = 4-1) */
+  flex-direction: row-reverse;
+
+  /* column or column reverse */
+  flex-direction: column;
+
+  /* Will be bottom anchored (top-bottom = 4-1 */
+  flex-direction: column-reverse;
+
+  /* reset to default */
+  flex-direction: row;
+
+  /* MAIN AXIS */
+  /* justify-content sets the alignment to main axis */
+  /* default is flex-start */
+  justify-content: flex-start;
+
+  /* will stick to the right part of the screen (right anchored, but order wouldnt change) */
+  justify-content: flex-end;
+
+  /* center the contents to the main axis */
+  justify-content: center;
+
+  /* will provide spaces (left & right) between flex items/elements */
+  justify-content: space-between;
+
+  /* will provide spaces around (left & right) the each item/element */
+  justify-content: space-around;
+
+  /* will provide spaces (left & right) between flex items/elements including both end items/elements */
+  justify-content: space-evenly;
+
+  /* CROSS AXIS */
+  border: 10px solid black;
+  height: 90vh;
+
+  /* CROSS AXIS */
+  /* align-items sets the alignment to cross axis */
+  /* default is flex-start */
+  align-items: flex-start;
+
+  /* will stick to the bottom part of the screen (bottom anchored, but order wouldnt change) */
+  align-items: flex-end;
+
+  /* center the contents to the cross axis */
+  align-items: center;
+
+  /*  */
+  align-items: baseline;
+
+  /* will provide spaces (top & bottom) between flex items/elements */
+  align-items: space-between;
+
+  /* will provide spaces around (top & bottom) the each item/element */
+  align-items: space-around;
+
+  /* will provide spaces (top & bottom) between flex items/elements including both end items/elements */
+  align-items: space-evenly;
+  
+  /* feault flex-wrap is nowrap */
+  /* TYPICALLY USED ALONG WITH PROPERY 'align-content' */
+  /* flex-wrap: nowrap; */
+
+  /* maintain size of elements when ran out of room */
+  /* flex-wrap: wrap; */
+
+  /* the element that adjusted itself will be above other elements */
+  /* flex-wrap: wrap-reverse; */
+
+  /* flex-wrap: wrap; */
+
+  /* align-content: flex-start; */
+
+  /* align-content: center; */
+
+  /* align-content: space-evenly;   */
+
+  /* align-content: space-between; */
+
+  /* align-content: flex-start; */
+
+  /* column-gap: 2em; */
+  /* row-gap: 2em; */
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+
+  font-size: 8em;
+  text-align: center;
+
+  border-radius: 15px;
+}
+
+#box1 {
+  background-color: hsl(0, 100%, 50%);
+
+  /* There's also the align-self propery that can be applied to a single element */
+  /* Need to remove flex-wrap property and align-content */
+  /* default is start */
+  
+  align-self: flex-start;
+
+  align-self: center;
+
+  align-self: flex-end;
+
+  /* can also change the order (property) where the element should appear */
+  /* 1 = at the very end */
+  /* -1 = at the very beginning */
+  order: 1;
+}
+
+#box2 {
+  background-color: hsl(58, 100%, 50%);
+  
+}
+
+#box3 {
+  background-color: hsl(103, 100%, 50%);
+
+  /* place box 3 at the very beginning */
+  order: -1;
+}
+
+#box4 {
+  background-color: hsl(212, 100%, 50%);
+}
