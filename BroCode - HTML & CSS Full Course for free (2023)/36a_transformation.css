@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+}
+
+/* #box1 { */
+  /* width: 250px;
+  height: 250px;
+  border: 5px solid;
+  font-size: 13em;
+  text-align: center;
+  background-color: hsl(120, 100%, 25%); */
+
+  /* translateX = adjust the position of the element relative to the x-axis */
+  /* positive numbers will move the element to the right, negative numbers will move the elements to the left */
+  /* transform: translateX(50px); */
+
+  /* percentages are fine too */
+  /* transform: translateX(50%); */
+
+  /* translateY = adjust the position of the element relative to the y-axis */
+  /* positive numbers will move the element up, negative numbers will move the element down */
+
+  /* transform: translateY(50px); */
+
+  /* percentages are fine too */
+  /* transform: translateY(50%); */
+
+  /* Can do both at the same time */
+  /* transform: translate(50px, 50px); */
+
+  /* We also have rotations */
+  /* need angle/degree for parameter */
+  /* transform: rotateX(180deg); */
+  /* transform: rotateY(180deg); */
+
+  /* transform: rotateZ(135deg); */
+
+  /* Can combine them into one line */
+  /* transform: rotateX(180deg) rotateY(180deg) rotateZ(130deg); */
+
+  /* scaling */
+  /* transform: scaleX(0.5); */
+
+  /* transform: scaleY(1.3); */
+
+  /* transform: scaleZ(2.3); */
+
+  /* transform: scale(2.3, 3.1); */
+
+  /* transform: skewX(135deg); */
+
+  /* transform: skewY(-45deg); */
+
+  /* Can do a combination of different transform properties */
+  /* transform: scale(2, 1.5) rotate(45deg) translate(10px, 20px); */
+  /* transform: translateX(100%) rotateZ(90deg) scale(0.5); */
+/* } */
+
+/* transform can also be applied to classes */
+.box {
+  width: 250px;
+  height: 250px;
+  border: 5px solid;
+  font-size: 13em;
+  text-align: center;
+  
+  transform: translateX(100px) rotateZ(45deg) scale(0.5);
+}
+
+#box1 {
+  background-color: hsl(120, 100%, 25%);
+}
+
+#box2 {
+  background-color: hsl(0, 84%, 39%);
+}
+
+#box3 {
+  background-color: hsl(209, 100%, 25%);
+}
+
+img {
+  transform: translateX(100%) rotateZ(180deg) scaleX(2);
+}
