@@ -1,0 +1,6 @@
+justify-content         Main-Axis Alignment
+align-items             Cross-Axis Alignment
+flex-wrap               Responsive Line Breaks
+flex-shrink             Allow getting smaller
+flex-grow               Allow getting bigger
+min-widtth & max-width  Limit flex-grow & shrink

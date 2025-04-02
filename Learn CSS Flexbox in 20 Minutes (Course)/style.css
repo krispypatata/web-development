@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  border: 8px solid black;
+
+  /* HOW TO CENTER A FDIV */
+  /* justify-content: center; */
+  /* justify-content: space-evenly; */
+  min-height: 800px;
+  /* align-items: center; */
+
+  /* CENTERING DIV VERTICALLY */
+  /* justify-content: flex-start; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+
+  gap:20px;
+  /* Resizing the window will show how the elements flow to the next line when necessary*/
+  /* flex-wrap: wrap; */
+
+  /* The bloxes will shrink together */
+  /* flex-wrap: nowrap; */
+
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* The difference between align-content and align-items is align-items will control the alignment along the cross-axis of every flexblox line individually, and align-content will control the alignment of all lines together*/
+  /* align-content: space-evenly; */
+
+  /* Instead of using the gap propery, you can set gaps individually*/
+  column-gap: 10px;
+  row-gap: 20px;
+
+  align-items: flex-start;
+}
+
+#box-1 {
+  /* flex-shrink: 1; */
+  /* flex-grow: 1; */
+
+  /* grow 5 times faster */
+  /* flex-grow: 5; */
+
+  align-self: flex-end;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: #0071FF;
+  font-size: 40pt;
+
+  /* 0 don't shrink automatically */
+  /* 1 (default) shrink automatically */
+  /* flex-shrink: 0; */
+
+  /* flex-grow = opposite of flex-shrhink */
+  /* 0 (default value) = do not grow */
+  /* 1 = grow */
+  /* Flex grow allows every element to try and fill out all the available space inside the parent element */
+  /* flex-grow: 0; */
+  flex-grow: 1;
+
+  max-width: 200px;
+
+  /* Center  contents inside each box (e.g. integer values) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 575px) {
+  body {
+    flex-wrap: wrap;
+  }
+}
